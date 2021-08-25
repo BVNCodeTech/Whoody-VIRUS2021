@@ -5,7 +5,7 @@
 }
 
 body{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 li{
     list-style: none;
@@ -29,7 +29,6 @@ a{
     top: 0%;
     left: 0;
     width: 100vw;
-    border: 1px solid black;
     height: 100vh;
 }
 
@@ -42,6 +41,10 @@ a{
 
 .overlay .left-overlay{
     background-color: var(--englishLavender);
+}
+
+.overlay .right-overlay{
+    background-color: var(--apricot);
 }
 
 .hero .nav{
@@ -60,6 +63,9 @@ a{
 
 .hero .nav ul a{
     color: white;
+}
+.hero .nav ul a:hover{
+    color: var(--oldLavender);
 }
 
 .hero .banner{
@@ -96,23 +102,25 @@ font-family: 'Poppins', sans-serif; */
 .socials{
     position: absolute;
     top: 0;
-    right: 20px;
+    right: 0px;
     width: 5vw;
     height: 100vh;
-    padding: 1em;
-    border-left: 1px solid rgb(56, 56, 56);
+    border-left: 1px solid white;
     font-size: 2em;
+    text-align: center;
 }
 
 .store{
     text-align: center;
+    padding: 1em;
 }
 
 .socials .social-links{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 3em;
+    align-items: center;
+    margin-top: 6em;
 }
 
 .socials .social-links li{
@@ -121,9 +129,12 @@ font-family: 'Poppins', sans-serif; */
 }
 
 .socials .social-links i{
-    color: var(--oldLavender);
+    color: #ff6868;
 }
 
+.socials .store i{
+    color: var(--oldLavender);
+}
 .socials .social-links i:hover{
-    color: black;
+    color: var(--oldLavender);
 }
