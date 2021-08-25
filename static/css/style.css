@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+:root{
+    --apricot: #FFCDB2;
+    --melon: #FFB4A2;
+    --pink: #E5989B;
+    --englishLavender: #B5838D;
+    --oldLavender: #6D6875;
+}
+
+.hero{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100vw;
+    border: 1px solid black;
+    height: 100vh;
+}
+
+.overlay{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: -1;
+}
+
+.overlay .left-overlay{
+    background-color: var(--englishLavender);
+}
+
+.hero .nav{
+    background-color: transparent;
+    width: 35vw;
+    font-size: 1.5em;
+    padding: 1em 2em;
+}
+
+.hero .nav ul{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.hero .nav ul a{
+    color: white;
+}
+
+.hero .banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.hero .banner .outer{
+    width: 50%;
+}
+.hero .banner .product-image img{
+    width: 350px;
+    height: 350px;
+}
+
+.hero .banner .text .title{
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #000000bd;
+}
+
+.hero .banner .text .desc{
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif
+}
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+
+.socials{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 5vw;
+    height: 100vh;
+    padding: 1em;
+    border-left: 1px solid rgb(56, 56, 56);
+    font-size: 2em;
+}
+
+.store{
+    text-align: center;
+}
+
+.socials .social-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.socials .social-links li{
+    margin: 1em 0;
+    text-align:  center;
+}
+
+.socials .social-links i{
+    color: var(--oldLavender);
+}
+
+.socials .social-links i:hover{
+    color: black;
+}
