@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    /* overflow-x: hidden; */
-}
 li{
     list-style: none;
 }
@@ -112,7 +109,7 @@ font-family: 'Poppins', sans-serif; */
 
 .store{
     text-align: center;
-    padding: 1em;
+    padding: 1em 0;
 }
 
 .socials .social-links{
@@ -137,4 +134,83 @@ font-family: 'Poppins', sans-serif; */
 }
 .socials .social-links i:hover{
     color: var(--oldLavender);
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    right: 6vw;
+    font-size: 4em;
+    margin: 5px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #000000bd;
+}
+
+.slider{
+    position: absolute;
+    bottom: 10vh;
+    right: 2vw;
+    width: 16vw;
+    height: 20vh;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.slider .slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 25%;
+    transition: 1s;
+}
+.slider .slides input{
+    display: none;
+}
+
+.slider img{
+    height: 100%;
+    width: 100%;
+}
+
+.manual-nav{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 16vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.manual-btn{
+    border: 2px solid #a8b7ff;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.manual-btn:hover{
+    background-color: #a8b7ff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
 }
