@@ -77,12 +77,14 @@
      
  }
 
- .pricing-plan_container{
-     display: flex;
+.pricing-plan_container{
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 10px;
-    }
+    width: 50%;
+    margin: 3em auto;
+}
 .testimonials{
         font-size: 4em;
     font-weight: bold;
@@ -104,7 +106,7 @@
 }
     .wrapper{
     background: linear-gradient( 90deg, white, 0%, #ff6868 90%);
-    min-height: 100vh;
+    min-height: 70vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -134,7 +136,7 @@
 }
 .card img{
     height: 90px;
-    width: 90px;
+    width: 100px;
     border: 2px solid #eeeeee;
     border-radius: 50%;
     position: absolute;
@@ -152,5 +154,4 @@
     bottom: 20px;
     right: 25px;
     color: white;
-
 }
