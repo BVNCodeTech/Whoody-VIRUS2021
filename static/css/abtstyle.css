@@ -1,0 +1,78 @@
+.head{
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.pricing-plan{
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family:'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    margin: 15px;
+ }
+ 
+ .pricing-plan_header{
+     padding: 25px;
+     background: #ff6868;
+     color: white;
+ 
+ }
+ 
+ .pricing-plan_title{
+     margin: 0;
+     text-align: center;
+     font-size: 1.5em;
+     font-weight: 400;
+ }
+ 
+ .pricing-plan_actions{
+     padding: 25px;
+     border-top: 1px solid #eeeeee;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .pricing-plan_button{
+     display: inline-block;
+     margin: 15px auto;
+     padding: 8px 20px;
+     text-decoration: none;
+     color: #ff6868;
+     background: white;
+     border-radius: 5px;
+     border: 1px solid #ff6868;
+     text-transform: uppercase;
+     letter-spacing: 0.02em;
+     font-weight: bold;
+ }
+ .pricing-plan_button:hover{
+     background: #ff6868;
+     color: white;
+ }
+ .pricing-plan_cost{
+     margin: 0;
+     text-align: center;
+     font-size: 2em;
+     color: black;
+     font-weight: bold;
+ }
+ .pricing-plan_text{
+     font-size: 0.9em;
+     text-align: center;
+     margin: 0 0 10px 0;
+     
+ }
+
+ .pricing-plan_container{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    }
