@@ -37,7 +37,7 @@ a{
 }
 
 .overlay .left-overlay{
-    background-color: var(--englishLavender);
+    background-color: #c08081;
 }
 
 .overlay .right-overlay{
@@ -46,7 +46,7 @@ a{
 
 .hero .nav{
     background-color: transparent;
-    width: 35vw;
+    width: 40vw;
     font-size: 1.5em;
     padding: 1em 2em;
 }
@@ -82,7 +82,7 @@ a{
 }
 
 .hero .banner .text .title{
-    font-size: 4em;
+    font-size: 2.5em;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     color: #000000bd;
@@ -182,7 +182,7 @@ font-family: 'Poppins', sans-serif; */
     position: absolute;
     bottom: 5px;
     right: 0;
-    width: 15vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,3 +256,167 @@ font-family: 'Poppins', sans-serif; */
 
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif; */
+.sizes{
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    color: white;
+}
+
+.size-text{
+    font-family: 'Poppins', sans-serif;
+}
+
+.sizes .line{
+    border: 2px solid white;
+    padding: 0px 30px;
+}
+
+.size{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 35px;
+    text-align: center;
+    padding: 5px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+.size:hover{
+    cursor: pointer;
+    border-color: black;
+    color: black;
+}
+
+.upper-line{
+    border: 2px solid white;
+    width: 0;
+    padding: 60px 0px;
+    position: absolute;
+    left: 2em;
+    bottom: 5em;
+}
+
+
+
+
+
+@media (max-width: 1500px){
+    .sizes{
+        width: 30vw;
+    }
+    .hero .nav{
+        width: 50vw;
+    }
+    .about-us .text .para {
+        font-size: 1.1em;
+        width: 80%;
+    }
+}
+
+@media (max-width: 1300px){
+    .slider{
+        width: 250px;
+        height: 260px;
+    }
+}
+
+@media (max-width: 1200px){
+    .hero .banner .outer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    .slider{
+        bottom: 20vh;
+        right: 15vw
+    }
+    .hero .banner .text{
+        width: 45vw;
+    }
+    .hero .banner .text .title{
+        font-size: 2em;
+    }
+    .sizes {
+        width: 40vw;
+    }
+    .hero .nav{
+        font-size: 1.2em;
+    }
+    .about-us{grid-template-columns: 1fr 1fr;}
+    .about-us .text .title h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 950px){
+    .socials .social-links i{
+        font-size: 0.8em;
+    }
+    .slider {
+        width: 200px;
+        height: 220px;
+        bottom: 25vh;
+        right: 16vw;
+    }
+    .hero .banner .text .desc{
+        font-size: 1.2em;
+    }
+    .hero .banner .text .title{
+        margin-top: 2em;
+        font-size: 1.5em;
+    }
+    .sizes {
+        width: 50vw;
+    }
+    .hero .nav{
+        font-size: 1em;
+    }
+    .about-us {
+        width: 90%;
+    }
+    .about-us .text{
+        padding: 0;
+    }
+    .about-us .text .para {
+        font-size: 1em;
+        width: 95%;
+    }
+}
+
+@media (max-width: 950px){
+    /* change design completely */
+}
+
+@media (max-width: 700px){
+    .about-us .text .para {
+        margin: 1em;
+        font-size: 0.8em;
+    }
+    .about-us .text .title h1{
+        font-size: 1.3em;
+    }
+}
+
+
+@media (max-height: 950px){
+    .socials .social-links{
+        margin-top: 3em;
+    }
+}
+
+@media (max-height: 840px){
+    .slider{
+        width: 260px;
+        height: 270px;
+    }
+    .socials .social-links{
+        margin-top: 1.5em;
+    }
+}
