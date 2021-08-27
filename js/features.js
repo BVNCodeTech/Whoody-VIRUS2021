@@ -35,3 +35,10 @@ document.onkeydown = function (e) {
             break;
     }
 };
+
+
+gsap.to('.block div', {duration:1, x:'-100%', stagger:0.2})
+gsap.from('.upper .text', {opacity:0, duration: 0.4, y:'-100px', delay:1})
+gsap.from('.car', {x:'-20vw', duration:2, delay:1.5})
+gsap.from('.feature', {scrollTrigger:'.feature', opacity:0, duration: 0.4, y:'-100px', delay:1})
+
