@@ -314,6 +314,10 @@ font-family: 'Poppins', sans-serif; */
     .hero .nav{
         width: 50vw;
     }
+    .about-us .text .para {
+        font-size: 1.1em;
+        width: 80%;
+    }
 }
 
 @media (max-width: 1300px){
@@ -345,6 +349,10 @@ font-family: 'Poppins', sans-serif; */
     .hero .nav{
         font-size: 1.2em;
     }
+    .about-us{grid-template-columns: 1fr 1fr;}
+    .about-us .text .title h1 {
+        font-size: 2em;
+    }
 }
 
 @media (max-width: 950px){
@@ -370,11 +378,32 @@ font-family: 'Poppins', sans-serif; */
     .hero .nav{
         font-size: 1em;
     }
+    .about-us {
+        width: 90%;
+    }
+    .about-us .text{
+        padding: 0;
+    }
+    .about-us .text .para {
+        font-size: 1em;
+        width: 95%;
+    }
 }
 
 @media (max-width: 950px){
     /* change design completely */
 }
+
+@media (max-width: 700px){
+    .about-us .text .para {
+        margin: 1em;
+        font-size: 0.8em;
+    }
+    .about-us .text .title h1{
+        font-size: 1.3em;
+    }
+}
+
 
 @media (max-height: 950px){
     .socials .social-links{
