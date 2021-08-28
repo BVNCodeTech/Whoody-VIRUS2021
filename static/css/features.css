@@ -21,7 +21,7 @@ body{overflow-y: hidden;}
 .lower{
     position: relative;
     bottom: 10vh;
-    background-image: url('/static/images/Img_02.png');
+    background-image: url('/static/images/road.png');
     background-repeat: repeat;
     background-size: contain;
     height: 21vh;
@@ -29,7 +29,7 @@ body{overflow-y: hidden;}
 }
 
 .features .car{
-    background-image: url('/static/images/Img_05.png');
+    background-image: url('/static/images/car.png');
     height: 75px;
     width: 160px;
     position: absolute;
@@ -91,7 +91,7 @@ body{overflow-y: hidden;}
     background-color: #5a5ad2;
 }
 
-@keyframes suspension{
+@keyframes suspension{    
     100%{transform: translateY(0px);}
     50%{transform: translateY(3px);}
     0%{transform: translateY(0px);}
