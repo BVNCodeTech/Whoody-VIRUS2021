@@ -246,7 +246,7 @@ font-family: 'Poppins', sans-serif; */
 .about-us .text .para{
     font-size: 1.2em;
     font-family: 'Montserrat', sans-serif;
-    width: 50%;
+    width: 75%;
     margin: 2em auto;
 }
 .svg-container img{
@@ -303,9 +303,88 @@ font-family: 'Poppins', sans-serif; */
     bottom: 5em;
 }
 
+.footer{
+    display: flex; 
+    background-color: var(--melon);
+}
 
+.footer-nav{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    border-right: 1px solid white;
+}
 
+.footer-nav ul{
+    width: 50%;
+    margin: 2em auto;
+}
 
+.footer-nav ul li{
+    margin-bottom: 10px;
+}
+
+.footer-nav ul a{
+    color: white;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer-nav ul a:hover{
+    color: var(--oldLavender);
+}
+
+.hoodie-images{
+    width: 70%;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* box-shadow: 0px 8px 17px 2px rgba(0,0,0,0.14) , 0px 3px 14px 2px rgba(0,0,0,0.12) , 0px 5px 5px -3px rgba(0,0,0,0.2) ; */
+}
+
+.hoodie-images img{
+    width: 200px;
+    margin: auto;
+}
+
+.copyrights{
+    background-color: var(--oldLavender);
+    text-align: center;
+    font-family: 'Poppins';
+    color: white;
+    padding: 10px;
+}
+
+.buttons{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.btn{
+    background-color: #6e6ef3;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+}
+
+.btn a{
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover{
+    background-color: #6e6ef3db;
+}
 
 @media (max-width: 1500px){
     .sizes{
@@ -353,6 +432,12 @@ font-family: 'Poppins', sans-serif; */
     .about-us .text .title h1 {
         font-size: 2em;
     }
+    .btn a{
+        font-size: 1em;
+    }
+    .footer-nav ul{
+        margin: 2em 1em;
+    }
 }
 
 @media (max-width: 950px){
@@ -388,6 +473,16 @@ font-family: 'Poppins', sans-serif; */
         font-size: 1em;
         width: 95%;
     }
+    .footer-nav ul a{
+        font-size: 1.5em;
+    }
+    .footer-nav ul{
+        width: 70%;
+        margin: 2em auto;
+    }
+    .hoodie-images img{
+        width: 150px;
+    }
 }
 
 @media (max-width: 950px){
@@ -402,8 +497,29 @@ font-family: 'Poppins', sans-serif; */
     .about-us .text .title h1{
         font-size: 1.3em;
     }
+    .btn{
+        padding: 3px;
+        font-size: 0.8em;
+    }
+    .footer-nav ul a {
+        font-size: 1.2em;
+    }
 }
 
+@media (max-width: 600px){
+    .footer-nav ul a {
+        font-size: 1em;
+    }
+    .hoodie-images img{
+        width: 100px;
+    }
+    .footer-nav{
+        border: none;
+    }
+    .copyrights{
+        font-size: 0.8em;
+    }
+}
 
 @media (max-height: 950px){
     .socials .social-links{
