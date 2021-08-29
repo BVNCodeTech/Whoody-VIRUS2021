@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{overflow-y: hidden;}
+
+.features{
+    width: 400vw;
+}
+.upper{
+    height: 89vh;
+    background: linear-gradient(to right, #f0c27b, #4b1248);;
+    border: 1px solid black;
+    display: flex;
+    z-index: -1;
+    transition: transform 200ms linear;
+}
+
+.lower{
+    position: relative;
+    bottom: 10vh;
+    background-image: url('/static/images/road.png');
+    background-repeat: repeat;
+    background-size: contain;
+    height: 21vh;
+    transition: transform 200ms linear;
+}
+
+.features .car{
+    background-image: url('/static/images/car.png');
+    height: 75px;
+    width: 160px;
+    position: absolute;
+    left: 20vw;
+    top: 81vh;
+    /* animation: suspension 1s linear infinite; */
+}
+
+.intro{
+    width: 100vw;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    width: 50%;
+    text-align: center;
+} 
+
+.text .title{
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.text .tagline{
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    color: #000000ab;
+    letter-spacing: 3px;
+    margin-bottom: 3em;
+}
+
+.text .desc{
+    font-family: 'Poppins', sans-serif;
+}
+
+.feature{
+    width: 80vw;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.block div{
+    height: 33vh;
+    width: 101vw;
+    background-color: #5a5ad2;
+}
+
+@keyframes suspension{    
+    100%{transform: translateY(0px);}
+    50%{transform: translateY(3px);}
+    0%{transform: translateY(0px);}
+}
