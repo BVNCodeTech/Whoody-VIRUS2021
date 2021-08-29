@@ -376,6 +376,13 @@ font-family: 'Poppins', sans-serif; */
     background-color: #6e6ef3db;
 }
 
+.video{
+    background-color: var(--englishLavender);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ---------- Media queries --------- */
 @media (max-width: 1500px){

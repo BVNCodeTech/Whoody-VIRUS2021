@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/style.css">
     <link rel="stylesheet" href="./static/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins&display=swap" rel="stylesheet">
@@ -94,6 +95,11 @@
         </div>
     </section>
     
+    <div class="video">
+        <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+            <source src="video.mp4" type="video/mp4" />
+        </video>
+    </div>
 
     <footer>
         <section class="footer">
@@ -118,6 +124,8 @@
             All rights reserved 2021 @Aesthetic Clothing 
         </div>
     </footer>
+
+    <script src="https://cdn.plyr.io/3.6.3/plyr.polyfilled.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
