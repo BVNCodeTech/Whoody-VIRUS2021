@@ -2,6 +2,66 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(https://images.unsplash.com/photo-1579269896398-4deb6cbdc320?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80);
+    background-size: cover;
+    background-position:center;
+}
+.navbar{
+   width: 85%;
+   margin:auto;
+   padding: 35px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #ffb4a2;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+.topcontent{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.topcontent h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.topcontent p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
 }
 .head{
     font-size: 4em;
@@ -11,6 +71,7 @@
     text-align: center;
 }
 
+/*---------------------------------------Pricing----------------------------------------*/
 .pricing-plan{
     width: 300px;
     border-radius: 25px;
@@ -21,61 +82,56 @@
     line-height: 1.5;
     color: black;
     margin: 15px;
-    
- }
+}
  
- .pricing-plan_header{
+.pricing-plan_header{
      padding: 25px;
-     background: #ff6868;
+     background: #6d6875;
      color: white;
-    
- }
+}
  
- .pricing-plan_title{
-     margin: 0;
+.pricing-plan_title{
+     margin-top: 10px;
      text-align: center;
      font-size: 1.5em;
      font-weight: 400;
- }
- 
- .pricing-plan_actions{
+}
+.pricing-plan_actions{
      padding: 25px;
      border-top: 1px solid #eeeeee;
      display: flex;
      flex-direction: column;
-    
- }
- 
+}
  .pricing-plan_button{
      display: inline-block;
      margin: 15px auto;
      padding: 8px 20px;
      text-decoration: none;
-     color: #ff6868;
+     color: #6d6875;
      background: white;
      border-radius: 5px;
-     border: 1px solid #ff6868;
+     border: 1px solid #6d6875;
      text-transform: uppercase;
      letter-spacing: 0.02em;
      font-weight: bold;
- }
- .pricing-plan_button:hover{
-     background: #ff6868;
+}
+.pricing-plan_button:hover{
+     background: #6d6875;
      color: white;
- }
- .pricing-plan_cost{
+     transition: 0.5s;
+}
+.pricing-plan_cost{
      margin: 0;
      text-align: center;
      font-size: 2em;
      color: black;
      font-weight: bold;
- }
- .pricing-plan_text{
+}
+.pricing-plan_text{
      font-size: 0.9em;
      text-align: center;
      margin: 0 0 10px 0;
-     
- }
+}
 
 .pricing-plan_container{
     display: flex;
@@ -83,19 +139,21 @@
     justify-content: space-between;
     padding: 10px;
     width: 50%;
-    margin: 3em auto;
+    margin: 5px auto;
 }
+
+/*-----------------------------------testimonials--------------------------------------*/
 .testimonials{
-        font-size: 4em;
+    font-size: 4em;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     color: white;
     text-align: center;
-    }
+}
 .wrapper h1 {
     font-size: 4em;
     font-weight: 800;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -104,10 +162,10 @@
     text-align: center;
     margin-bottom: 50px;
 }
-    .wrapper{
-    background: linear-gradient( 90deg, white, 0%, #ff6868 90%);
+.wrapper{
+    background: linear-gradient( 90deg, white, 0%, #6d6875 90%);
     min-height: 70vh;
-    margin: 0 auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,7 +180,6 @@
     width: 1000px;
     margin: 0 auto;
     margin-top: 70px;
-
 }
 .card{
     width: 350px;
@@ -154,4 +211,62 @@
     bottom: 20px;
     right: 25px;
     color: white;
+}
+
+/*----------------------------------------------footer----------------------------------------------*/
+.footer{
+    display: flex; 
+    background-color: #ffb4a2;
+}
+
+.footer-nav{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    border-right: 1px solid white;
+}
+
+.footer-nav ul{
+    width: 50%;
+    margin: 2em auto;
+}
+
+.footer-nav ul li{
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.footer-nav ul a{
+    color: white;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer-nav ul a:hover{
+    color: #6d6875;
+}
+
+.hoodie-images{
+    width: 70%;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    /* box-shadow: 0px 8px 17px 2px rgba(0,0,0,0.14) , 0px 3px 14px 2px rgba(0,0,0,0.12) , 0px 5px 5px -3px rgba(0,0,0,0.2) ; */
+}
+
+.hoodie-images img{
+    width: 230px;
+    margin: auto;
+}
+
+.copyrights{
+    background-color: #6d6875;
+    text-align: center;
+    font-family: 'Poppins';
+    color: white;
+    padding: 10px;
 }
