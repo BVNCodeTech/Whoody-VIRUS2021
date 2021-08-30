@@ -18,11 +18,11 @@ Project is created with
 *  CSS 3 
     
 ##  Features
-*Auto-Cleaning  
-*Color shifting  
-*Temperature Adjusting   
-*Self-repairing   
-*Made sustainably   
-*Auto-resize   
+*   Auto-Cleaning  
+*  Color shifting  
+*   Temperature Adjusting   
+*  Self-repairing   
+*  Made sustainably   
+*  Auto-resize   
 
 ###   Live Demo  
