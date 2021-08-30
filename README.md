@@ -4,7 +4,9 @@
 
 ##  Table of Contents  
 *  [General Info](#general-info)  
+*  [Features ](#features)     
 *  [Technologies](#technologies)     
+
 
 ##  General Info      
 website and video trailer created for VIRUS 2021 by Birla Vidya Niketan  
