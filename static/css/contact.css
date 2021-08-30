@@ -4,6 +4,25 @@
     box-sizing: border-box;
     font-family:'Montserrat', sans-serif;
 }
+
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+:root{
+    --apricot: #FFCDB2;
+    --melon: #FFB4A2;
+    --pink: #E5989B;
+    --englishLavender: #B5838D;
+    --oldLavender: #6D6875;
+}
+
 /*---------hero banner--------------------*/
 .banner{
     width: 100%;
@@ -66,10 +85,9 @@
 }
 
 /*-------------contact form-----------------*/
-body{
-    min-height: 100vh;
+.contact-container{
+    min-height: 80vh;
     width: 100%;
-    background: #6d6875;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,3 +192,99 @@ body{
     opacity: 0.5; 
   }
   
+.footer{
+    display: flex; 
+    background-color: var(--melon);
+}
+
+.footer-nav{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    border-right: 1px solid white;
+}
+
+.footer-nav ul{
+    width: 50%;
+    margin: 2em auto;
+}
+
+.footer-nav ul li{
+    margin-bottom: 10px;
+}
+
+.footer-nav ul a{
+    color: white;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer-nav ul a:hover{
+    color: var(--oldLavender);
+}
+
+.hoodie-images{
+    width: 70%;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    /* box-shadow: 0px 8px 17px 2px rgba(0,0,0,0.14) , 0px 3px 14px 2px rgba(0,0,0,0.12) , 0px 5px 5px -3px rgba(0,0,0,0.2) ; */
+}
+
+.hoodie-images img{
+    width: 230px;
+    margin: auto;
+}
+
+.copyrights{
+    background-color: var(--oldLavender);
+    text-align: center;
+    font-family: 'Poppins';
+    color: white;
+    padding: 10px;
+}
+
+/* ----------- Media queries -------- */
+@media (max-width: 1200px){
+    .footer-nav ul{
+        margin: 2em 1em;
+    }
+}
+
+@media (max-width: 950px){
+    .footer-nav ul a{
+        font-size: 1.5em;
+    }
+    .footer-nav ul{
+        width: 70%;
+        margin: 2em auto;
+    }
+    .hoodie-images img{
+        width: 150px;
+    }
+}
+
+@media (max-width: 800px){
+    .footer-nav ul a {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 600px){
+    .footer-nav ul a {
+        font-size: 1em;
+    }
+    .hoodie-images img{
+        width: 100px;
+    }
+    .footer-nav{
+        border: none;
+    }
+    .copyrights{
+        font-size: 0.8em;
+    }
+}
