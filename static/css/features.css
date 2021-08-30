@@ -26,8 +26,17 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 0 3em;
-    position: relative;
+    position: fixed;
+    width: 100%;
     z-index: 2;
+    transition: 400ms ease-out;
+}
+
+nav.sticky{
+    background-color: white;
+}
+.sticky .navbar ul li a, .sticky ul li i{
+    color: black;
 }
 
 .navbar ul{
@@ -44,7 +53,9 @@ nav{
     color: white;
     z-index: 3;
 }
-
+.navbar ul li a:hover, .social-links li i:hover{
+    color: #ff7f7f;
+}
 .social-links ul{
     display: flex;
 }
@@ -56,6 +67,17 @@ nav{
 
 .social-links li i{
     color: white;
+}
+
+.burger{
+    display: none;
+}
+
+.burger .line{
+    width: 1.5em;
+    height: 0.1em;
+    margin: 0.4em;
+    background-color: white;
 }
 
 header{
@@ -73,7 +95,7 @@ header{
 }
 
 .hero{
-    height: 90%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,4 +274,162 @@ section{
     font-family: 'Poppins';
     color: white;
     padding: 10px;
+}
+
+/* ----------- Media queries -------- */
+@media (max-width: 1200px){
+    .footer-nav ul{
+        margin: 2em 1em;
+    }
+    .feature{
+        width: 90%;
+    }
+    .features-title{
+        width: 75%;
+    }
+}
+
+@media (max-width: 950px){
+    .footer-nav ul a{
+        font-size: 1.5em;
+    }
+    .footer-nav ul{
+        width: 70%;
+        margin: 2em auto;
+    }
+    .hoodie-images img{
+        width: 150px;
+    }
+    .hero .text{
+        width: 90%;
+    }
+    .feature img {
+        width: 400px;
+        height: 400px;
+    }
+    .interactive .btn {
+        width: 50%;
+    }
+    .interactive .text{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 800px){
+    .footer-nav ul a {
+        font-size: 1.2em;
+    }
+    .feature img {
+        width: 300px;
+        height: 300px;
+    }
+    .features-title {
+        font-size: 3em;
+    }
+    nav{
+        position: absolute;
+        right: 0;
+        display: flex;
+        top: 8vh;
+        flex-direction: column;
+        height: 45vh;
+        background-color: #f67676;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+        z-index: 3;
+        width: 60%;
+    }
+    .navbar ul li a:hover, .social-links li i:hover{
+        color: var(--oldLavender);
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .burger {
+        display: block;
+        color: white;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-50%, 50%);
+    }
+    .nav-active{
+        transform: translateX(0%);
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .interactive .btn {
+        width: 100%;
+    }
+    nav.sticky{
+        background-color: none;
+    }
+    .sticky .navbar ul li a, .sticky ul li i{
+        color: white;
+    }
+}
+
+@media (max-width: 700px){
+    .hero{
+        height: 115%;
+    }
+    .hero .text{width: 60%;}
+    .feature .desc {
+        width: 100%;
+        font-size: 0.8em;
+    }
+    .feature .title{
+        font-size: 1.5em;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .footer-nav ul a {
+        font-size: 1em;
+    }
+    .hoodie-images img{
+        width: 100px;
+    }
+    .footer-nav{
+        border: none;
+    }
+    .copyrights{
+        font-size: 0.8em;
+    }
+    .hero .text .title{font-size: 1.5em;}
+    .hero .desc{font-size: 0.8em;}
+    .hero .btn{
+        width: 100%;
+    }
+    .features-title {
+        width: 90%;
+        font-size: 2em;
+    }
+    .interactive .text {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 500px){
+    .feature img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 400px){
+    .feature img {
+        width: 150px;
+        height: 150px;
+    }
+    .hero .text {
+        width: 90%;
+    }
 }

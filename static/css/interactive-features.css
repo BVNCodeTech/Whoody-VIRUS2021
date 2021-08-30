@@ -4,10 +4,21 @@
     box-sizing: border-box;
 }
 
-body{overflow-y: hidden;}
+body{overflow-y: hidden; overflow-x: hidden;}
 
+.instructions{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    color: #575757;
+    animation: blink 4s ease-in 8s infinite;
+}
 .features{
-    width: 400vw;
+    width: 550vw;
+    height: 100vh;
 }
 .upper{
     height: 89vh;
@@ -16,11 +27,13 @@ body{overflow-y: hidden;}
     display: flex;
     z-index: -1;
     transition: transform 200ms linear;
+    position: absolute;
 }
 
 .lower{
-    position: relative;
-    bottom: 10vh;
+    position: absolute;
+    top: 79vh;
+    width: 550vw;
     background-image: url('/static/images/road.png');
     background-repeat: repeat;
     background-size: contain;
@@ -81,18 +94,97 @@ body{overflow-y: hidden;}
 .block{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 }
+
 .block div{
     height: 33vh;
-    width: 101vw;
+    width: 102vw;
     background-color: #5a5ad2;
 }
 
+.loading, .logo{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: center;
+}
+
+.loading .loading-text{
+    font-size: 5em;
+    font-family: 'Poppins';
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+}
+
+.loading .circles{
+    padding: 0px 8px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+}
+
+.logo .small-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo .small-text .company{
+    font-size: 1.5em;
+    font-family: 'Poppins';
+    letter-spacing: 3px;
+    color: white;
+    margin: 0 10px;
+}
+
+.logo .small-text .line{
+    padding: 0 50px;
+    display: inline-block;
+    border: 2px solid white;
+}
+
+.logo .large-text h1{
+    color: white;
+    font-size: 5em;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+
+.loading{
+    animation: blink 1s linear 3;
+}
+
+.logo{
+    opacity: 1;
+    /* animation: show 3s linear 3.5s; */
+}
+
 @keyframes suspension{    
-    100%{transform: translateY(0px);}
+    100%{transform: translateY(0px);} 
     50%{transform: translateY(3px);}
     0%{transform: translateY(0px);}
+}
+
+@keyframes blink{    
+    100%{opacity: 0;}
+    0%{opacity: 1;}
+}
+
+@keyframes show{    
+    50%{opacity: 1;}
+    0%{opacity: 0;}
+}
+
+.contact{
+    width: 50vw;
+    border: 1px solid white;
+    height: 80%;
 }
