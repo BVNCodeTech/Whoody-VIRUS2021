@@ -1,6 +1,5 @@
 # Whoody - Aesthetic Clothing
 >  futuristic hoodie  
->  Live Demo  
 
 
 ##  Table of Contents  
@@ -16,4 +15,4 @@ Project is created with
 *  Javascript ES 2020  
 *  CSS 3   
 
-
+###   Live Demo  
