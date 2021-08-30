@@ -1,2 +1,4 @@
-# laxmi-chit-fund
-21 din mey paisa double
+# Whoody - Aesthetic Clothing
+website and video trailer created for VIRUS 2021
+Birla Vidya Niketan
+
