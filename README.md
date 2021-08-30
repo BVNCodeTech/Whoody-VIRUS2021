@@ -1,6 +1,6 @@
 # Whoody - Aesthetic Clothing
->futuristic hoodie  
->Live Demo  
+>  futuristic hoodie  
+>  Live Demo  
 
 
 ##  Table of Contents  
@@ -8,13 +8,13 @@
 *  [Technologies](#technologies)     
 *  [General Info](#setup)   
 
-##General Info    
+##  General Info      
 website and video trailer created for VIRUS 2021 by Birla Vidya Niketan  
 
 ##
 Project is created with  
-*HTML 5  
-*Javascript ES 2020  
-*CSS 3   
+*  HTML 5  
+*  Javascript ES 2020  
+*  CSS 3   
 
 
