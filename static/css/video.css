@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{overflow-x: hidden;}
+:root{
+    --apricot: #FFCDB2;
+    --melon: #FFB4A2;
+    --pink: #E5989B;
+    --englishLavender: #B5838D;
+    --oldLavender: #6D6875;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    transition: 400ms ease-out;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    padding: 1em ;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    color: white;
+    z-index: 3;
+}
+.navbar ul li a:hover, .social-links li i:hover{
+    color: #ff7f7f;
+}
+.social-links ul{
+    display: flex;
+}
+
+.social-links li{
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.social-links li i{
+    color: white;
+}
+
+.burger{
+    display: none;
+}
+
+.burger .line{
+    width: 1.5em;
+    height: 0.1em;
+    margin: 0.4em;
+    background-color: white;
+}
+
+.video{
+    height: 100vh;
+    border: 1px solid black;
+    width: 100vw;
+}
+
+.video video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+.footer{
+    display: flex; 
+    background-color: var(--melon);
+}
+
+.footer-nav{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    border-right: 1px solid white;
+}
+
+.footer-nav ul{
+    width: 50%;
+    margin: 2em auto;
+}
+
+.footer-nav ul li{
+    margin-bottom: 10px;
+}
+
+.footer-nav ul a{
+    color: white;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer-nav ul a:hover{
+    color: var(--oldLavender);
+}
+
+.hoodie-images{
+    width: 70%;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hoodie-images img{
+    width: 230px;
+    margin: auto;
+}
+
+.copyrights{
+    background-color: var(--oldLavender);
+    text-align: center;
+    font-family: 'Poppins';
+    color: white;
+    padding: 10px;
+}
