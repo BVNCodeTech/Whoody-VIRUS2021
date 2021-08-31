@@ -24,6 +24,65 @@ a{
 }
 
 /*---------hero banner--------------------*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    transition: 400ms ease-out;
+}
+
+nav.sticky{
+    background-color: white;
+}
+.sticky .navbar ul li a, .sticky ul li i{
+    color: black;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    padding: 1em ;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    color: white;
+    z-index: 3;
+}
+.navbar ul li a:hover, .social-links li i:hover{
+    color: #ff7f7f;
+}
+.social-links ul{
+    display: flex;
+}
+
+.social-links li{
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.social-links li i{
+    color: white;
+}
+
+.burger{
+    display: none;
+}
+
+.burger .line{
+    width: 1.5em;
+    height: 0.1em;
+    margin: 0.4em;
+    background-color: white;
+}
+
 .banner{
     width: 100%;
     height: 100vh;
@@ -31,46 +90,13 @@ a{
     background-size: cover;
     background-position:center;
 }
-.navbar{
-   width: 85%;
-   margin:auto;
-   padding: 35px 0;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 400;
-}
-.navbar ul li::after{
-    content: "";
-    height: 3px;
-    width: 0;
-    background: #ffb4a2;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-}
-.navbar ul li:hover::after{
-    width: 100%;
-}
-
 
 .topcontent{
-    width: 100%;
+    width: 60%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
 }
@@ -86,7 +112,7 @@ a{
 
 /*-------------contact form-----------------*/
 .contact-container{
-    min-height: 80vh;
+    margin: 10vh 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -160,7 +186,7 @@ a{
     font-size: 16px;
     background: #463b58  ;
     border-radius: 6px;
-    padding: 0 25px;
+    padding: 5px 25px;
     resize: none;
 }
 .input-box [type="text"]{
@@ -266,11 +292,65 @@ a{
     .hoodie-images img{
         width: 150px;
     }
+    .container .content .right-side{margin: 75px 0;}
+    .container .content{
+        flex-direction: column;
+    }
+    .content .left-side::before { display: none;}
+
+    .container .content .left-side {
+        width: 100%;
+        margin: auto;
+    }
 }
 
 @media (max-width: 800px){
     .footer-nav ul a {
         font-size: 1.2em;
+    }
+    nav{
+        position: absolute;
+        right: 0;
+        display: flex;
+        top: 8vh;
+        flex-direction: column;
+        height: 45vh;
+        background-color: #f67676;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+        z-index: 3;
+        width: 60%;
+    }
+    .navbar ul li a:hover, .social-links li i:hover{
+        color: var(--oldLavender);
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .burger {
+        display: block;
+        color: white;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-50%, 50%);
+    }
+    .nav-active{
+        transform: translateX(0%);
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    nav.sticky{
+        background-color: #f67676;
+    }
+    .sticky .navbar ul li a, .sticky ul li i{
+        color: white;
     }
 }
 
@@ -286,5 +366,16 @@ a{
     }
     .copyrights{
         font-size: 0.8em;
+    }
+    .topcontent{width: 90%;}
+    .topcontent h1{font-size: 50px;}
+    .container .content .right-side {
+        width: 100%;
+    }
+    .input-box input, .input-box textarea {
+        font-size: 13px;
+    }
+    .content .right-side .topic-text{
+        font-size: 20px;
     }
 }
