@@ -10,8 +10,11 @@ var features_width = initial_width;
 window.addEventListener("resize", onresize);
 
 function onresize() {
-    features_width = features.offsetWidth;
+    // features_width = upper.offsetWidth;
+    // features.style.width = "" + features_width + 'px';
+
     console.log(features_width);
+    console.log(upper.offsetWidth);
 }
 
 document.onkeydown = function (e) {
@@ -70,13 +73,33 @@ gsap.from('.car', { x: '-20vw', duration: 2, delay: 8.5 })
 // gsap.from('.feature', {scrollTrigger:'.feature', opacity:0, duration: 0.4, y:'-100px', delay:1})
 
 var body = document.querySelector('body');
-setTimeout(show_overflow, 8000);
+setTimeout(show_overflow, 10000);
 
 function show_overflow() {
     body.style.overflowX = "visible";
+    var block = document.querySelector('.block');
+    var logo = document.querySelector('.logo');
+    var loading = document.querySelector('.loading');
+    block.style.display = "none";
+    logo.style.display = "none";
+    loading.style.display = "none";
 }
 
 
 $(document).ready(function(){
     $(this).scrollTop(0);
 });
+
+function reportWindowSize() {
+    console.log("here");
+    lower.style.transform = "translateX('0%')";
+    upper.style.transform = "translateX('0%')";
+    features.style.width = "500vw";
+    initial_width = features.style.width;
+    features_width = initial_width;
+}
+  
+window.onresize = reportWindowSize;
+
+// on resize, bring lower and upper translateX to 0 and features.width intialised again to 500vw
+// 
