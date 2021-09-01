@@ -49,7 +49,6 @@ body{overflow-y: hidden; overflow-x: hidden;}
     position: absolute;
     top: 79vh;
     width: 550vw;
-    background-image: url('/static/images/road.png');
     background-repeat: repeat;
     background-size: contain;
     height: 21vh;
@@ -57,7 +56,6 @@ body{overflow-y: hidden; overflow-x: hidden;}
 }
 
 .features .car{
-    background-image: url('/static/images/car.png');
     height: 75px;
     width: 160px;
     position: absolute;
