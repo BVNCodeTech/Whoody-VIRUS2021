@@ -81,7 +81,6 @@ nav.sticky{
 }
 
 header{
-    background-image: url('/static/images/features-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
