@@ -17,7 +17,8 @@ a{
     --oldLavender: #6D6875;
 }
 
-body{overflow-y: hidden; overflow-x: hidden;}
+body{overflow-y: hidden; overflow-x: hidden; width: 0;
+}
 
 .instructions{
     position: absolute;
@@ -263,6 +264,10 @@ body{overflow-y: hidden; overflow-x: hidden;}
     text-align: center;
     margin: 10px auto;
     transition: all 0.3 ease;
+}
+.button a{
+    display: block;
+    width: 100%;
 }
 .button:hover{
     background: #6D6875;

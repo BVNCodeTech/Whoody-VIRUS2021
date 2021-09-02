@@ -666,3 +666,13 @@ font-family: 'Poppins', sans-serif; */
         margin-top: 1.5em;
     }
 }
+
+@media (max-height:700px){
+    .socials .social-links {
+        margin-top: 1em;
+    }
+    .slider{
+        width: 220px;
+        height: 230px;
+    }
+}

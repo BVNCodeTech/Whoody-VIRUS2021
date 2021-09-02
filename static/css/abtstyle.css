@@ -432,3 +432,9 @@ nav.sticky{
     .card{width: 85%;}
     .wrapper h1{font-size: 3em;}
 }
+
+@media (max-height:900px){
+    .wrapper{
+        min-height: 90vh;
+    }
+}
