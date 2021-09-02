@@ -130,7 +130,7 @@ font-family: 'Poppins', sans-serif; */
 }
 
 .socials .store i{
-    color: var(--oldLavender);
+    color: #ff6868;
 }
 .socials .social-links i:hover{
     color: var(--oldLavender);
@@ -625,6 +625,9 @@ font-family: 'Poppins', sans-serif; */
     .features .desc{
         font-size: 1em;
     }
+    .socials {
+        display: none;
+    }
 }
 
 @media (max-width: 450px){
@@ -632,9 +635,7 @@ font-family: 'Poppins', sans-serif; */
     .sizes, .hero .nav{
         width: 95vw;
     }
-    .socials {
-        width: 10vw;
-    }
+    
     .hero .banner .text .title{
         font-size: 2em;
     }

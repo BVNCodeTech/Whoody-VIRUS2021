@@ -366,9 +366,9 @@ nav.sticky{
         height: 45vh;
         background-color: #f67676;
         align-items: center;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in-out;
-        z-index: 3;
+        transition: all 0.5s ease-in-out;
+        z-index: -1;
+        opacity: 0;
         width: 60%;
     }
     .navbar ul li a:hover, .social-links li i:hover{
@@ -387,7 +387,8 @@ nav.sticky{
         transform: translate(-50%, 50%);
     }
     .nav-active{
-        transform: translateX(0%);
+        opacity: 1;
+        z-index: 3;
     }
     .navbar ul{
         display: flex;

@@ -9,13 +9,13 @@ var features_width = initial_width;
 
 window.addEventListener("resize", onresize);
 
-function onresize() {
-    // features_width = upper.offsetWidth;
-    // features.style.width = "" + features_width + 'px';
+// function onresize() {
+//     // features_width = upper.offsetWidth;
+//     // features.style.width = "" + features_width + 'px';
 
-    console.log(features_width);
-    console.log(upper.offsetWidth);
-}
+//     console.log(features_width);
+//     console.log(upper.offsetWidth);
+// }
 
 document.onkeydown = function (e) {
     console.log(e.keyCode);
@@ -26,6 +26,8 @@ document.onkeydown = function (e) {
             if (features_width > window.innerWidth) {
                 lower.style.transform = "translateX(-" + (moved + moveBy) + 'px' + ")";
                 upper.style.transform = "translateX(-" + (moved + moveBy) + 'px' + ")";
+                features.style.width = "" + (features_width - movespeed) + 'px';
+                features_width -= movespeed;
                 moved += moveBy;
             }
             break;
@@ -33,6 +35,10 @@ document.onkeydown = function (e) {
         case 65:
             lower.style.transform = "translateX(-" + (moved - moveBy) + 'px' + ")";
             upper.style.transform = "translateX(-" + (moved - moveBy) + 'px' + ")";
+            features.style.width = "" + (features_width + movespeed) + 'px';
+            if (features_width < initial_width) {
+                features_width += movespeed;
+            }
             if (moved > 0) {
                 moved -= moveBy;
             }
@@ -85,21 +91,16 @@ function show_overflow() {
     loading.style.display = "none";
 }
 
-
-$(document).ready(function(){
-    $(this).scrollTop(0);
-});
-
-function reportWindowSize() {
-    console.log("here");
-    lower.style.transform = "translateX('0%')";
-    upper.style.transform = "translateX('0%')";
-    features.style.width = "500vw";
-    initial_width = features.style.width;
-    features_width = initial_width;
-}
+// function reportWindowSize() {
+//     console.log("here");
+//     lower.style.transform = "translateX('0%')";
+//     upper.style.transform = "translateX('0%')";
+//     features.style.width = "500vw";
+//     initial_width = features.style.width;
+//     features_width = initial_width;
+// }
   
-window.onresize = reportWindowSize;
+// window.onresize = reportWindowSize;
 
 // on resize, bring lower and upper translateX to 0 and features.width intialised again to 500vw
 // 
