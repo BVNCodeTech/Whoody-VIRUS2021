@@ -367,7 +367,7 @@ nav.sticky{
         background-color: #f67676;
         align-items: center;
         transition: all 0.5s ease-in-out;
-        z-index: -1;
+        z-index: 3;
         opacity: 0;
         width: 60%;
     }
@@ -388,7 +388,6 @@ nav.sticky{
     }
     .nav-active{
         opacity: 1;
-        z-index: 3;
     }
     .navbar ul{
         display: flex;
