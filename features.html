@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="hero-overlay"></div>
@@ -49,7 +50,7 @@
     <section>
         <div class="features-title">Whoody Features</div>
         <div class="features">
-            <div class="feature">
+            <div class="feature" data-aos="fade-left" data-aos-offset="300">
                 <div class="left"><img src="./static/images/feature1.png" alt=""></div>
                 <div class="right">
                     <div class="title">Colour changing features!</div>
@@ -57,7 +58,7 @@
                 </div>
             </div>
     
-            <div class="feature">
+            <div class="feature" data-aos="fade-right" data-aos-offset="300">
                 <div class="left">
                     <div class="title">Made of wolverine material</div>
                     <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, beatae. Voluptate beatae voluptates iste, ipsum placeat non eos inventore quisquam!</div>
@@ -67,7 +68,7 @@
                 </div>
             </div>
     
-            <div class="feature">
+            <div class="feature" data-aos="fade-left" data-aos-offset="300">
                 <div class="left"><img src="./static/images/self drying.png" alt=""></div>
                 <div class="right">
                     <div class="title">Futuristic self drying capabilities</div>
@@ -75,7 +76,7 @@
                 </div>
             </div>
     
-            <div class="feature">
+            <div class="feature" data-aos="fade-right" data-aos-offset="300">
                 <div class="left">
                     <div class="title">Sustainable</div>
                     <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, beatae. Voluptate beatae voluptates iste, ipsum placeat non eos inventore quisquam!</div>
@@ -85,7 +86,7 @@
                 </div>
             </div>
     
-            <div class="feature">
+            <div class="feature" data-aos="fade-left" data-aos-offset="300">
                 <div class="left"><img src="./static/images/temp-adjusting.jpg" alt=""></div>
                 <div class="right">
                     <div class="title">Temprature adjusting</div>
@@ -124,6 +125,13 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script src="./js/hamburger.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
