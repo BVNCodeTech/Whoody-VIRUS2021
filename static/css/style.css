@@ -12,6 +12,7 @@ a{
     text-decoration: none;
     color: black;
 }
+body{overflow-x: hidden;}
 
 :root{
     --apricot: #FFCDB2;
@@ -297,8 +298,14 @@ font-family: 'Poppins', sans-serif; */
     background-color: var(--englishLavender);
     padding: 5em 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.video .btn{
+    margin-top: 3em;
+    width: 400px;
 }
 
 /* --------- features section --------- */
@@ -627,6 +634,9 @@ font-family: 'Poppins', sans-serif; */
     }
     .socials {
         display: none;
+    }
+    .video .btn{
+        width: 250px;
     }
 }
 

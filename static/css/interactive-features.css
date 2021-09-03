@@ -327,8 +327,10 @@ body{overflow-y: hidden; overflow-x: hidden; width: 0;
     body{
         height: 100vh;
         width: 100vw;
-        overflow:hidden;
+        overflow-y:hidden;
+        overflow-x: hidden;
     }
+    .features{display: none;}
     .mobile{
         display: block;
         position: absolute;
