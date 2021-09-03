@@ -17,7 +17,8 @@ a{
     --oldLavender: #6D6875;
 }
 
-body{overflow-y: hidden; overflow-x: hidden;}
+body{overflow-y: hidden; overflow-x: hidden; width: 0;
+}
 
 .instructions{
     position: absolute;
@@ -37,7 +38,7 @@ body{overflow-y: hidden; overflow-x: hidden;}
 }
 .upper{
     height: 89vh;
-    background: linear-gradient(to right, #f0c27b, #4b1248);;
+    background: linear-gradient(to right, #f0c27b, #7b4178);;
     border: 1px solid black;
     display: flex;
     z-index: -1;
@@ -49,7 +50,6 @@ body{overflow-y: hidden; overflow-x: hidden;}
     position: absolute;
     top: 79vh;
     width: 550vw;
-    background-image: url('/static/images/road.png');
     background-repeat: repeat;
     background-size: contain;
     height: 21vh;
@@ -57,7 +57,6 @@ body{overflow-y: hidden; overflow-x: hidden;}
 }
 
 .features .car{
-    background-image: url('/static/images/car.png');
     height: 75px;
     width: 160px;
     position: absolute;
@@ -266,6 +265,10 @@ body{overflow-y: hidden; overflow-x: hidden;}
     margin: 10px auto;
     transition: all 0.3 ease;
 }
+.button a{
+    display: block;
+    width: 100%;
+}
 .button:hover{
     background: #6D6875;
 }
@@ -321,6 +324,13 @@ body{overflow-y: hidden; overflow-x: hidden;}
 }
 
 @media(max-width:700px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        overflow-y:hidden;
+        overflow-x: hidden;
+    }
+    .features{display: none;}
     .mobile{
         display: block;
         position: absolute;

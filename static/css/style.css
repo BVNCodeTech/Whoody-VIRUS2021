@@ -12,6 +12,7 @@ a{
     text-decoration: none;
     color: black;
 }
+body{overflow-x: hidden;}
 
 :root{
     --apricot: #FFCDB2;
@@ -130,7 +131,7 @@ font-family: 'Poppins', sans-serif; */
 }
 
 .socials .store i{
-    color: var(--oldLavender);
+    color: #ff6868;
 }
 .socials .social-links i:hover{
     color: var(--oldLavender);
@@ -297,8 +298,14 @@ font-family: 'Poppins', sans-serif; */
     background-color: var(--englishLavender);
     padding: 5em 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.video .btn{
+    margin-top: 3em;
+    width: 400px;
 }
 
 /* --------- features section --------- */
@@ -625,6 +632,12 @@ font-family: 'Poppins', sans-serif; */
     .features .desc{
         font-size: 1em;
     }
+    .socials {
+        display: none;
+    }
+    .video .btn{
+        width: 250px;
+    }
 }
 
 @media (max-width: 450px){
@@ -632,9 +645,7 @@ font-family: 'Poppins', sans-serif; */
     .sizes, .hero .nav{
         width: 95vw;
     }
-    .socials {
-        width: 10vw;
-    }
+    
     .hero .banner .text .title{
         font-size: 2em;
     }
@@ -663,5 +674,15 @@ font-family: 'Poppins', sans-serif; */
     }
     .socials .social-links{
         margin-top: 1.5em;
+    }
+}
+
+@media (max-height:700px){
+    .socials .social-links {
+        margin-top: 1em;
+    }
+    .slider{
+        width: 220px;
+        height: 230px;
     }
 }

@@ -10,10 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="hero-overlay"></div>
-    <header>
+    <header  style="background-image: url('./static/images/features-bg.jpg');">
         <nav>
             <div class="navbar">
                 <ul>
@@ -36,7 +37,8 @@
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <div class="hero">
+    
+    <div class="hero"> 
             <div class="text">
                 <div class="title"><h1>Features</h1></div>
                 <div class="desc">Our Whoody is no ordinary hoodie.<br>It has some exhilarating features that you need to check out!</div>
@@ -48,43 +50,43 @@
     <section>
         <div class="features-title">Whoody Features</div>
         <div class="features">
-            <div class="feature">
-                <div class="left"><img src="/static/images/feature1.png" alt=""></div>
+            <div class="feature" data-aos="fade-left" data-aos-offset="300">
+                <div class="left"><img src="./static/images/feature1.png" alt=""></div>
                 <div class="right">
                     <div class="title">Colour Changing Features!</div>
                     <div class="desc">Whoody has a fine coating of "Photochromic Dye". This makes it change it's colour when exposed to sunlight. The colour change depends upon the amount of UV rays absorbed by the dye.</div>
                 </div>
             </div>
     
-            <div class="feature">
+            <div class="feature" data-aos="fade-right" data-aos-offset="300">
                 <div class="left">
                     <div class="title">Made of Wolverine Material</div>
                     <div class="desc">The most advanced material, which is used in making parts of robots, is now being used in Whoody. Wolverine material allows the cloth to repair itself from accidental scratches plus it also extends the life of fabric.</div>
                 </div>
                 <div class="right">
-                    <img src="static/images/self healing.png" alt="">
+                    <img src="./static/images/self healing.png" alt="">
                 </div>
             </div>
     
-            <div class="feature">
-                <div class="left"><img src="/static/images/self drying.png" alt=""></div>
+            <div class="feature" data-aos="fade-left" data-aos-offset="300">
+                <div class="left"><img src="./static/images/self drying.png" alt=""></div>
                 <div class="right">
                     <div class="title">Futuristic Self-Drying Capabilities</div>
                     <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, beatae. Voluptate beatae voluptates iste, ipsum placeat non eos inventore quisquam!</div>
                 </div>
             </div>
     
-            <div class="feature">
+            <div class="feature" data-aos="fade-right" data-aos-offset="300">
                 <div class="left">
                     <div class="title">Sustainable Material</div>
                     <div class="desc">For the well-being of our planet, Whoody is therefore made from fabrics which are environmental-friendly and uses natural resources efficiently, without compromising the needs of the future.</div>
                 </div>
                 <div class="right">
-                    <img src="/static/images/sustainable.png" alt="">
+                    <img src="./static/images/sustainable.png" alt="">
                 </div>
             </div>
     
-            <div class="feature">
+            <div class="feature" data-aos="fade-left" data-aos-offset="300">
                 <div class="left"><img src="./static/images/temp-adjusting.jpg" alt=""></div>
                 <div class="right">
                     <div class="title">Temprature adjusting</div>
@@ -123,6 +125,13 @@
         </div>
     </footer>
 
-    <script src="/js/hamburger.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="./js/hamburger.js"></script>
+    <script src="./js/features-animations.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
