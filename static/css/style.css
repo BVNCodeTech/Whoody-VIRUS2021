@@ -303,6 +303,10 @@ font-family: 'Poppins', sans-serif; */
     align-items: center;
 }
 
+video{
+    max-width: 1200px;
+    margin: auto;
+}
 .video .btn{
     margin-top: 3em;
     width: 400px;

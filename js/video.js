@@ -18,7 +18,7 @@ var video = document.querySelector('video');
 var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({
-    duration: 7000, 
+    duration: 32000, 
     triggerElement: vid_section,
     triggerHook: 0
 })
