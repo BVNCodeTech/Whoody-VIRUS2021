@@ -27,3 +27,10 @@ Project is created with
 
 ###   Live Demo  
 https://suyash-singh14.github.io/Whoody-VIRUS2021
+
+###  Github repo
+https://github.com/Suyash-Singh14/Whoody-VIRUS2021
+
+### Warnings
+* Interactive features section breaks on resizing :(
+* Video page doesn't work on smaller displays(mainly displays which have an aspect ratio less than 1.5)
