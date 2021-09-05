@@ -82,7 +82,6 @@ nav{
 
 .video video{
     width: 100vw;
-    max-height: 100vh;
     /* height: 100vh;
     object-fit: cover; */
 }
