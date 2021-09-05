@@ -18,7 +18,7 @@ var video = document.querySelector('video');
 var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({
-    duration: 78000, 
+    duration: 80000, 
     triggerElement: vid_section,
     triggerHook: 0
 })
@@ -36,7 +36,7 @@ scene.on('update', e => {
 setInterval(()=>{
     delay += (scrollpos-delay) * delay_percent;
     video.currentTime = scrollpos;
-}, 41)
+}, 41.16)
 
 var mobile = document.querySelector('.mobile');
 var main = document.querySelector('.main');
