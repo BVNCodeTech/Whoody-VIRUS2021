@@ -18,7 +18,7 @@ var video = document.querySelector('video');
 var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({
-    duration: 120000, 
+    duration: 78000, 
     triggerElement: vid_section,
     triggerHook: 0
 })
@@ -64,3 +64,7 @@ window.addEventListener("resize", function(){
     }
     console.log("resized");
 })
+
+document.addEventListener('scroll', function(){
+    document.querySelector('.scroll-down').style.opacity = 0;
+});

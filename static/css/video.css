@@ -81,7 +81,8 @@ nav{
 }
 
 .video video{
-    width: 100%;
+    width: 100vw;
+    max-height: 100vh;
     /* height: 100vh;
     object-fit: cover; */
 }
@@ -197,3 +198,54 @@ footer{
 .main.unactive{
     display: none;
 }
+
+.scroll-down {
+    height: 50px;
+    width: 30px;
+    border: 2px solid white;
+    position: absolute;
+    left: 50%;
+    bottom: 60vh;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity 400ms ease-in;
+  }
+
+  .scroll-down::before,
+  .scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid white;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+  }
+  .scroll-down::before {
+    top: 30%;
+    animation-delay: 0.3s;
+    /* animation: scroll-down 1s ease-in-out infinite; */
+  }
+  
+  @keyframes scroll-down {
+    0% {
+      /* top:20%; */
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      top: 90%;
+      opacity: 0;
+    }
+  }
+  
