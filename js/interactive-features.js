@@ -27,7 +27,7 @@ document.onkeydown = function (e) {
                 lower.style.transform = "translateX(-" + (moved + moveBy) + 'px' + ")";
                 upper.style.transform = "translateX(-" + (moved + moveBy) + 'px' + ")";
                 features.style.width = "" + (features_width - movespeed) + 'px';
-                features_width -= movespeed;
+                features_width -= moveBy;
                 moved += moveBy;
             }
             break;
@@ -37,7 +37,7 @@ document.onkeydown = function (e) {
             upper.style.transform = "translateX(-" + (moved - moveBy) + 'px' + ")";
             features.style.width = "" + (features_width + movespeed) + 'px';
             if (features_width < initial_width) {
-                features_width += movespeed;
+                features_width += moveBy;
             }
             if (moved > 0) {
                 moved -= moveBy;

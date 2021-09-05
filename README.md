@@ -12,7 +12,7 @@
 website and video trailer created for VIRUS 2021 by Birla Vidya Niketan  
 
 ##  Technologies
-Project is created with  
+Project is created with  a
 *  HTML 5  
 *  Javascript ES 2020  
 *  CSS 3 
