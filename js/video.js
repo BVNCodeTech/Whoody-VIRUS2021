@@ -18,7 +18,7 @@ var video = document.querySelector('video');
 var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({
-    duration: 32000, 
+    duration: 120000, 
     triggerElement: vid_section,
     triggerHook: 0
 })
@@ -37,3 +37,30 @@ setInterval(()=>{
     delay += (scrollpos-delay) * delay_percent;
     video.currentTime = scrollpos;
 }, 41)
+
+var mobile = document.querySelector('.mobile');
+var main = document.querySelector('.main');
+
+if(window.innerWidth/window.innerHeight<1.765){
+    mobile.classList.add("active");
+    main.classList.add("unactive");
+}
+else{
+    mobile.classList.remove("active");
+    main.classList.remove("unactive");
+}
+
+window.addEventListener("resize", function(){
+    console.log(window.innerWidth/window.innerHeight);
+    if(window.innerWidth/window.innerHeight<1.5){
+        console.log("add");
+        document.querySelector('.mobile').classList.add("active");
+        main.classList.add("unactive");
+    }
+    else{
+        console.log("remove");
+        document.querySelector('.mobile').classList.remove("active");
+        main.classList.remove("unactive");
+    }
+    console.log("resized");
+})

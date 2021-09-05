@@ -76,17 +76,20 @@ nav{
 
 .video{
     height: 100vh;
-    border: 1px solid black;
     width: 100vw;
+    overflow: hidden;
 }
 
 .video video{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+    width: 100%;
+    /* height: 100vh;
+    object-fit: cover; */
 }
 
-
+footer{
+    position: relative;
+    z-index:1000;
+}
 .footer{
     display: flex; 
     background-color: var(--melon);
@@ -140,4 +143,57 @@ nav{
     font-family: 'Poppins';
     color: white;
     padding: 10px;
+}
+
+.mobile{
+    display: none;
+}
+.mobile.active{
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    background-color: #19181a;
+    color: white;
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em;
+}
+.mobile.active .buttons{
+    width: 80%;
+    display: flex;
+    margin-top: 2em;
+}
+.mobile.active .button{
+    width: 40%;
+    font-weight: bold;
+}
+.button{
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #463b58 ;
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
+    margin: 10px auto;
+    transition: all 0.3 ease;
+}
+.button a{
+    color: white;
+    display: block;
+    width: 100%;
+}
+.button:hover{
+    background: #6D6875;
+}
+
+.main.unactive{
+    display: none;
 }
