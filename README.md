@@ -39,4 +39,4 @@ https://github.com/Suyash-Singh14/Whoody-VIRUS2021
 
 | Event | Code | Demo | Participants/Authors | Result |
 | --- | --- | --- | --- | -- |
-| VIRUS2021  | [Code](https://github.com/BVNCodeTech/Whoody-VIRUS2021) | [Demo](https://suyash-singh14.github.io/Whoody-VIRUS2021/) | Suyash Singh, Samridh Garg and Vaishnavi | To be decided |
+| VIRUS2021  | [Code](https://github.com/BVNCodeTech/Whoody-VIRUS2021) | [Demo](https://suyash-singh14.github.io/Whoody-VIRUS2021/) | Suyash Singh, Samridh Garg and Vaishnavi | 2nd (Overall 1st) |
